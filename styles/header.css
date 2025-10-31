@@ -1,0 +1,10 @@
+.header-menu {
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  justify-content: flex-end;
+}
+
+.header-menu li {
+  display: inline;
+}
