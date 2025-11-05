@@ -40,23 +40,35 @@ html {
 /* header search bar and icon*/
 .search {
   display: flex;
-  width: 30%;
+  justify-content: center;
+  width: 100%;
   align-items: center;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
 }
 
+.search:hover {
+  align-items: center;
+}
+
 .search-items {
   border: none;
+  height: 32px;
   border-radius: 4px;
   margin: 5px;
   background-color: wheat;
 }
 
 #header-search-bar {
-  width: 100%;
-  padding: 7px;
+  transition: height 0.25s width 0.25s;
+  width: 30%;
+  padding: 8px;
+}
+
+#header-search-bar:hover {
+  width: 40%;
+  height: 36px;
 }
 
 #header-submit {
@@ -64,14 +76,27 @@ html {
   height: 32px;
 }
 
+#header-submit:hover {
+  transition: width 0.25s, height 0.25s;
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+}
+
 
 /* additional header links */
 .header-links li {
   display: inline;
+  padding: 5px;
   font-size: 18px;
-  color: white;
+}
+
+.header-links a {
+  color: wheat;
 }
 
 .header-links li:hover {
-  color:white;
+  transition: font-weight 0.3s, font-size 0.25s;
+  font-weight: 700;
+  font-size: 20px;
 }
