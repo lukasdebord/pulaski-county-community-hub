@@ -27,8 +27,16 @@ html {
 }
 
 #header-title {
+  transition: font-weight 0.3s, font-size 0.25s;
+  color: wheat;
+  text-decoration: none;
   font-weight: 900;
   font-size: 40px;
+}
+
+#header-title:hover {
+  font-weight: 900;
+  font-size: 50px;
 }
 
 #header-subtitle {
