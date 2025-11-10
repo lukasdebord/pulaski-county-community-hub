@@ -1,0 +1,71 @@
+/*
+ * header.css
+ *
+ * default styling for homepage body
+ */
+
+#directory-catalog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: wheat;
+  padding: 20px;
+}
+
+#directory-catalog-title {
+  color: black;
+  font-weight: 900;
+  font-size: 40px;
+}
+
+#directory-catalog-subtitle {
+  text-align: center;
+}
+
+.directory-catagory-nav {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 60%;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.directory-catagory-btns {
+  transition: transform 0.25s;
+  display: inline-block;
+  background-color: saddlebrown;
+  color: white;
+  text-align: center;
+  text-wrap: balance;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  width: 150px;
+  padding: 10px;
+  margin: 20px;
+  aspect-ratio: 1 / 1;
+}
+
+.directory-catagory-btns:hover {
+  background-color: rgba(139, 69, 19, 0.9);
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+
+#highlights-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 700px;
+}
+
+#highlights {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}

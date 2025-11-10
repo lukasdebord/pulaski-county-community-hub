@@ -61,21 +61,19 @@ html {
   height: 36px;
   width: 36px;
   border-radius: 4px;
-  margin: 5px;
   background-color: wheat;
 }
 
 #header-search-bar {
-  transition: width 0.25s, height 0.25s;
+  transition: transform 0.25s;
   align-self: center;
-  width: 90%;
+  width: 85%;
   margin: auto;
   padding: 8px;
 }
 
 #header-search-bar:hover {
-  width: 100%;
-  height: 40px;
+  transform: scale(1.1);
 }
 
 #header-search-bar:focus {
@@ -88,7 +86,7 @@ html {
 }
 
 #header-submit {
-  transition: width 0.25s, height 0.25s;
+  transition: transform 0.25s;
   justify-content: flex-end;
   align-self: center;
   margin: 0px;
@@ -97,8 +95,7 @@ html {
 
 #header-submit:hover {
   cursor: pointer;
-  width: 46px;
-  height: 46px;
+  transform: scale(1.3);
 }
 
 
