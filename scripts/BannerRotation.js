@@ -9,7 +9,8 @@ const leftButton = document.getElementById("highlights-btns-left");
 const rightButton = document.getElementById("highlights-btns-right");
 
 let index = 0;
-const fadeDuration = 800; // matches CSS transition
+const fadeDuration = 800; 
+let autoRotateInterval;
 
 // Show initial image
 imageViewer.src = bannerImages[index];
@@ -19,23 +20,38 @@ function changeImage(newIndex) {
 
   setTimeout(() => {
     imageViewer.src = bannerImages[newIndex];
+
+    // Force reflow before removing fade
+    void imageViewer.offsetWidth;
+
     imageViewer.classList.remove("fade");
   }, fadeDuration);
+}
+
+
+
+function startAutoRotate() {
+  // Clear existing timer first
+  clearInterval(autoRotateInterval);
+
+  autoRotateInterval = setInterval(() => {
+    index = (index + 1) % bannerImages.length;
+    changeImage(index);
+  }, 8000);
 }
 
 // Button click handlers
 leftButton.addEventListener("click", () => {
   index = (index + 1) % bannerImages.length;
   changeImage(index);
+  startAutoRotate(); // reset timer
 });
 
 rightButton.addEventListener("click", () => {
   index = (index - 1 + bannerImages.length) % bannerImages.length;
   changeImage(index);
+  startAutoRotate(); // reset timer
 });
 
-// Auto-rotate every 4 seconds
-setInterval(() => {
-  index = (index + 1) % bannerImages.length;
-  changeImage(index);
-}, 8000);
+// Start rotation on load
+startAutoRotate();
