@@ -1,7 +1,10 @@
 const bannerImages = [
-  "assets/pexels-clement-couturier-546640561-32802427.jpg",
-  "assets/pexels-danieljschwarz-34403453.jpg",
-  "assets/pexels-kostas-dimopoulos-119583302-34595256.jpg"
+  "assets/banner/IMG_9263.JPG",
+  "assets/banner/IMG_9264.JPG",
+  "assets/banner/IMG_9265.JPG",
+  "assets/banner/IMG_9266.JPG",
+  "assets/banner/Kentucky_Route_80_in_Pulaski_County.jpg",
+  "assets/banner/Pulaski_County_Kentucky_courthouse.jpg"
 ];
 
 const imageViewer = document.getElementById("highlights-images");
@@ -37,7 +40,7 @@ function startAutoRotate() {
   autoRotateInterval = setInterval(() => {
     index = (index + 1) % bannerImages.length;
     changeImage(index);
-  }, 8000);
+  }, 12000);    // banner autorotate time
 }
 
 // Button click handlers
