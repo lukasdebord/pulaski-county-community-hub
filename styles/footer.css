@@ -21,3 +21,14 @@
 
 
 /* footer site links */
+.footer-socials-btns {
+  transition: transform 0.25s;
+  border: none;
+  border-radius: 2px;
+  background-color: rebeccapurple;
+}
+
+.footer-socials-btns:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
