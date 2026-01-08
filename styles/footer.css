@@ -9,7 +9,7 @@
   margin: 0;
   padding: 0;
   font-family: "Cinzel Decorative", serif;
-  color: wheat;
+  
 }
 
 #footer-menu {
@@ -17,6 +17,7 @@
   justify-content: center;
   padding: 30px 50px 30px 50px;
   background-color: saddlebrown;
+  color: wheat;
 }
 
 .footer-socials-subtitle {

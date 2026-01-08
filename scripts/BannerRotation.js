@@ -1,10 +1,12 @@
+console.log("pls work")
+
 const bannerImages = [
-  "assets/banner/IMG_9263.JPG",
-  "assets/banner/IMG_9264.JPG",
-  "assets/banner/IMG_9265.JPG",
-  "assets/banner/IMG_9266.JPG",
-  "assets/banner/Kentucky_Route_80_in_Pulaski_County.jpg",
-  "assets/banner/Pulaski_County_Kentucky_courthouse.jpg"
+  "../assets/banner/IMG_9263.JPG",
+  "../assets/banner/IMG_9264.JPG",
+  "../assets/banner/IMG_9265.JPG",
+  "../assets/banner/IMG_9266.JPG",
+  "../assets/banner/Kentucky_Route_80_in_Pulaski_County.jpg",
+  "../assets/banner/Pulaski_County_Kentucky_courthouse.jpg"
 ];
 
 const imageViewer = document.getElementById("highlights-images");
