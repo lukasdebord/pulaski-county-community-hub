@@ -1,14 +1,18 @@
 async function loadPart(id, file) {
   try {
     const res = await fetch(file);
-    document.getElementById(id).innerHTML = await res.text();
+    const html = await res.text(); // ← read ONCE
+
+    console.log("FETCHED HTML FOR", file);
+    console.log(html);
+
+    document.getElementById(id).innerHTML = html;
   } catch (err) {
     console.error(err);
   }
 }
 
-window.loadPart = loadPart;
-
-// CALL IMMEDIATELY
-loadPart("footer", "/pages/pagesRef/footer.html");
-loadPart("header", "/pages/pagesRef/header.html");
+document.addEventListener("DOMContentLoaded", () => {
+  loadPart("footer", "/pages/pagesRef/footer.html");
+  loadPart("header", "/pages/pagesRef/header.html");
+});
