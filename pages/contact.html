@@ -1,4 +1,4 @@
-<!-- directory.html -->
+<!-- contact.html -->
  <!DOCTYPE html>
 
 <html lang="en">
@@ -16,13 +16,43 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../styles/contact.css">
   </head>
 
   <body>
     <!-- header -->
     <div id="header"></div>
     
-    yappity yappity my keyboard go click clackity
+    <div id="contact-page">
+      <h2 id="subtitle">Submit Form</h2>
+      <form id="contact-form">
+        <!-- Inquiry Form -->
+        <label>Inquiry Type *</label>
+        <select>
+          <option selected disabled>---Select an option---</option>
+          <option>Suggest new resource</option>
+          <option>Website improvements</option>
+          <option>Report a problem</option>
+          <option>Other</option>
+        </select>
+
+        <!-- Input Fields -->
+        <label class="input-labels">Name *</label>
+        <input class="input-fields" placeholder="First Last">
+
+        <label class="input-labels">Email *</label>
+        <input class="input-fields" placeholder="john.doe@example.com">
+
+        <label class="input-labels">Phone Number (optional)</label>
+        <input class="input-fields" placeholder="(###) ###-####">
+
+        <label class="input-labels">Message *</label>
+        <input class="input-fields" placeholder="Message...">
+
+        <button id="submit-button">Submit</button>
+      </form>
+    </div>
 
     <!-- footer -->
     <div id="footer"></div>

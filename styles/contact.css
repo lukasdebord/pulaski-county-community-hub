@@ -1,0 +1,17 @@
+/*
+ * contact.css
+ *
+ * default styling for contact page
+ */
+
+ /*
+  * page defaults
+  */
+#contact-page {
+  display: flex;
+  background-color: wheat;
+}
+
+#contact-form {
+  display: flex;
+}
