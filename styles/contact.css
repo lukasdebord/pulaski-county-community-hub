@@ -9,9 +9,19 @@
   */
 #contact-page {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: wheat;
 }
 
 #contact-form {
   display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+}
+
+.form-dividers {
+  display: grid;
+  grid-template-columns: auto auto;
 }
