@@ -23,5 +23,49 @@
 
 .form-dividers {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 50% 50%;
+  padding: 15px;
+  gap: 15px;
 }
+
+.form-inner-dividers {
+  display: flex;
+  align-items: center;
+  height: 30px;
+}
+
+#message-form-div {
+  line-height: 0px;
+  height: 250px;
+  margin-bottom: 15px;
+}
+
+.input-labels {
+  margin-right: 10px;
+}
+
+.input-fields {
+  flex-grow: 1;
+  height: 100%;
+}
+
+#message-form {
+  resize: none;
+  height: 100%;
+}
+
+#submit-button {
+  transition: transform 0.25s;
+  border: none;
+  border-radius: 10px;
+  height: 30px;
+  width: 35%;
+  margin-bottom: 15px;
+  background-color: saddlebrown;
+}
+
+#submit-button:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+}
+

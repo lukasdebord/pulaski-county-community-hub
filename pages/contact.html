@@ -37,31 +37,32 @@
           <option>Other</option>
         </select>
         <br>
+        
         <!-- Input Fields -->
         <span class="form-dividers">
-          <div>
+          <div class="form-inner-dividers">
             <label class="input-labels">First Name *</label>
             <input class="input-fields" placeholder="First">
           </div>
-          <div>
+          <div class="form-inner-dividers">
             <label class="input-labels">Last Name *</label>
             <input class="input-fields" placeholder="Last">
           </div>
-        </span>
         
-        <span class="form-dividers">
-          <div>
+          <div class="form-inner-dividers">
             <label class="input-labels">Email *</label>
             <input class="input-fields" placeholder="john.doe@example.com">            
           </div>
-          <div>
+          <div class="form-inner-dividers">
             <label class="input-labels">Phone Number (optional)</label>
             <input class="input-fields" placeholder="(###) ###-####">            
           </div>
         </span>
 
-        <label class="input-labels">Message *</label>
-        <input class="input-fields" placeholder="Message...">
+        <div class="form-inner-dividers" id="message-form-div">
+          <label class="input-labels">Message *</label>
+          <textarea class="input-fields" id="message-form" placeholder="Message..."></textarea>
+        </div>
 
         <button id="submit-button">Submit</button>
       </form>
