@@ -28,9 +28,9 @@
       <h2 id="subtitle">Submit Form</h2>
       <form id="contact-form">
         <!-- Inquiry Form -->
-        <label>Inquiry Type *</label>
-        <select>
-          <option selected disabled>---Select an option---</option>
+        <label id="inquiry-label">Inquiry Type *</label>
+        <select id="inquiry-select">
+          <option selected disabled class="input-fields">---Select an option---</option>
           <option>Suggest new resource</option>
           <option>Website improvements</option>
           <option>Report a problem</option>
@@ -54,7 +54,7 @@
             <input class="input-fields" placeholder="john.doe@example.com">            
           </div>
           <div class="form-inner-dividers">
-            <label class="input-labels">Phone Number (optional)</label>
+            <label class="input-labels">Phone Number</label>
             <input class="input-fields" placeholder="(###) ###-####">            
           </div>
         </span>

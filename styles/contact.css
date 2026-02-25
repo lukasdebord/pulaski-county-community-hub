@@ -14,11 +14,25 @@
   background-color: wheat;
 }
 
+#subtitle {
+  font-size: 32px;
+  margin: 25px;
+}
+
 #contact-form {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  justify-content: center;
+  width: 70%;
+}
+
+#inquiry-label {
+  width: 100%;
+  text-align: center;
+}
+
+#inquiry-select {
+  align-self: center;
+  width: 60%;
 }
 
 .form-dividers {
@@ -30,36 +44,41 @@
 
 .form-inner-dividers {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   height: 30px;
 }
 
 #message-form-div {
   line-height: 0px;
-  height: 250px;
+  padding: 15px 0px 15px 15px;
+  height: 350px;
   margin-bottom: 15px;
 }
 
 .input-labels {
-  margin-right: 10px;
+  width: fit-content;
 }
 
 .input-fields {
-  flex-grow: 1;
+  justify-self: end;
+  width: 70%;
   height: 100%;
 }
 
 #message-form {
   resize: none;
+  width: 100%;
   height: 100%;
 }
 
 #submit-button {
   transition: transform 0.25s;
+  align-self: center;
   border: none;
   border-radius: 10px;
-  height: 30px;
-  width: 35%;
+  height: 50px;
+  width: 45%;
   margin-bottom: 15px;
   background-color: saddlebrown;
 }
