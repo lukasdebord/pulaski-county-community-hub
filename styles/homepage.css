@@ -4,6 +4,18 @@
  * default styling for homepage body
  */
 
+body#homepage #header {
+  transition: transform 0.4s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+body#homepage #header.hide {
+  transform: translateY(-100%);
+}
 
 /*
  * directory catalog 
@@ -107,14 +119,14 @@
   height: 50px;
   border-radius: 50px;
   border: none;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.4);
   z-index: 10;
 }
 
 .highlights-btns:hover {
   cursor: pointer;
   transform: scale(1.2);
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 #highlights-btns-left {

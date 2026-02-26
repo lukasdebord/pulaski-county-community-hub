@@ -7,7 +7,12 @@
  /*
   * page defaults
   */
-#contact-page {
+
+body {
+  background-color: wheat;
+}
+
+  #contact-page {
   display: flex;
   flex-direction: column;
   align-items: center;
