@@ -6,6 +6,7 @@
 }
 
 .directory-links li {
+  width: fit-content;
   padding: 5px;
 }
 
