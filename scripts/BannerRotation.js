@@ -1,5 +1,3 @@
-console.log("pls work")
-
 const bannerImages = [
   "../assets/banner/IMG_9263.JPG",
   "../assets/banner/IMG_9264.JPG",
