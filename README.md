@@ -1,14 +1,35 @@
----
-name: HTML Starter
-slug: html-starter-with-analytics
-description: HTML5 template with analytics and advanced routing configuration.
-deployUrl: https://vercel.com/new/clone?repository-url=https://github.com/vercel/examples/tree/main/solutions/html&project-name=html
-relatedTemplates:
-  - nextjs-boilerplate
----
+# Pulaski County Community Hub Website
+A community hub website for Pulaski County. Created for 2026 TSA state competition.
 
-# HTML Starter
+## Table of contents
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Features](#features)
+* [Project status](#project-status)
+* [Aknowledgements](#aknowledgements)
+* [Additional info](#additional-info)
 
-This is a starter HTML5 templates which is configured with Vercel Analytics (through a `script` tag), advanced routing with [Vercel Edge Middleware](https://vercel.com/docs/concepts/functions/edge-middleware), as well as some basic styles
+## General info
+* Pulaski community hub website built from scratch in HTML
+* Intended to give users searchable directory to events, non-profit organizations, and other important highlights of Pulaski county
+* Created for Technology Student Association webmaster state competition
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/examples/tree/main/solutions/html&project-name=html)
+## Technologies
+* **Hypertext Markup Langue 5:** A markup langue used for creating websites.
+* **Cascading Style Sheets 3:** Styling sheets to be used with HTML.
+* **JavaScript ES2025:** A scripting language based off of Java commonly used for website functionality.
+* **GitHub 3.18.0:** A proprietary developer platform for saving, sharing, and creating code.
+  https://github.com/
+* **Flowbite:** An open-sourced UI component library based on the Tailwind CSS framework.
+  https://flowbite.com/
+
+## Features
+*
+
+## Project status
+Project is: *in progress*
+
+## Aknowledgements
+
+## Additional info
+

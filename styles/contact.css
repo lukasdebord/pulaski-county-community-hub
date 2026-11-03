@@ -1,0 +1,95 @@
+/*
+ * contact.css
+ *
+ * default styling for contact page
+ */
+
+ /*
+  * page defaults
+  */
+
+body {
+  background-color: wheat;
+}
+
+  #contact-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: wheat;
+}
+
+#subtitle {
+  font-size: 32px;
+  margin: 25px;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+#inquiry-label {
+  width: 100%;
+  text-align: center;
+}
+
+#inquiry-select {
+  align-self: center;
+  width: 60%;
+}
+
+.form-dividers {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 15px;
+  gap: 15px;
+}
+
+.form-inner-dividers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+}
+
+#message-form-div {
+  line-height: 0px;
+  padding: 15px 0px 15px 15px;
+  height: 350px;
+  margin-bottom: 15px;
+}
+
+.input-labels {
+  width: fit-content;
+}
+
+.input-fields {
+  justify-self: end;
+  width: 70%;
+  height: 100%;
+}
+
+#message-form {
+  resize: none;
+  width: 100%;
+  height: 100%;
+}
+
+#submit-button {
+  transition: transform 0.25s;
+  align-self: center;
+  border: none;
+  border-radius: 10px;
+  height: 50px;
+  width: 45%;
+  margin-bottom: 15px;
+  background-color: saddlebrown;
+}
+
+#submit-button:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+}
+

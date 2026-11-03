@@ -1,0 +1,28 @@
+/*
+ * faq.css
+ *
+ * default styling for faq page
+ */
+
+#faq-title {
+  font-size: 50px;
+  text-align: center;
+}
+
+#question-bullets {
+  list-style-type: disc;
+  background-color: wheat;
+  border-radius: 10px;
+  font-size: 30px;
+  margin: 40px;
+  padding: 10px 0px 20px 45px;
+}
+
+.answer-bullets {
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 20px;
+  list-style-type: circle;
+  margin: 0px 25px 0px 55px;
+}

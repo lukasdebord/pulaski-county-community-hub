@@ -1,0 +1,75 @@
+<!-- contact.html -->
+ <!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="/_vercel/insights/script.js"></script>
+    <meta
+      name="Pulaski county community hub contact page"
+      content="Contact for webpage developers."
+    />
+    <title>Pulaski County Contact Page</title>
+
+    <!-- Cinzel Decorative Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../styles/contact.css">
+  </head>
+
+  <body>
+    <!-- header -->
+    <div id="header"></div>
+    
+    <div id="contact-page">
+      <h2 id="subtitle">Submit Form</h2>
+      <form id="contact-form">
+        <!-- Inquiry Form -->
+        <label id="inquiry-label">Inquiry Type *</label>
+        <select id="inquiry-select">
+          <option selected disabled class="input-fields">---Select an option---</option>
+          <option>Suggest new resource</option>
+          <option>Website improvements</option>
+          <option>Report a problem</option>
+          <option>Other</option>
+        </select>
+        <br>
+        
+        <!-- Input Fields -->
+        <span class="form-dividers">
+          <div class="form-inner-dividers">
+            <label class="input-labels">First Name *</label>
+            <input class="input-fields" placeholder="First">
+          </div>
+          <div class="form-inner-dividers">
+            <label class="input-labels">Last Name *</label>
+            <input class="input-fields" placeholder="Last">
+          </div>
+        
+          <div class="form-inner-dividers">
+            <label class="input-labels">Email *</label>
+            <input class="input-fields" placeholder="john.doe@example.com">            
+          </div>
+          <div class="form-inner-dividers">
+            <label class="input-labels">Phone Number</label>
+            <input class="input-fields" placeholder="(###) ###-####">            
+          </div>
+        </span>
+
+        <div class="form-inner-dividers" id="message-form-div">
+          <label class="input-labels">Message *</label>
+          <textarea class="input-fields" id="message-form" placeholder="Message..."></textarea>
+        </div>
+
+        <button id="submit-button">Submit</button>
+      </form>
+    </div>
+
+    <!-- footer -->
+    <div id="footer"></div>
+    <script src="../scripts/LoadTemplates.js"></script>
+  </body>
+</html>
